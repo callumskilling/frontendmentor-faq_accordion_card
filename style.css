@@ -13,13 +13,17 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-main {
+body {
     background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-size: 100%;
+}
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-top: 40vw;
 }
 
 .container {
@@ -29,6 +33,20 @@ main {
     background-color: white;
     width: 88%;
     border-radius: 20px;;
+}
+
+.mobile_person_bg {
+    height: 50vw;
+    margin-top: -30vw;  
+}
+
+.bg_shadow {
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -20vw;
+    height: 27.75vw;
+    width: 64vw
 }
 
 .faq_title {
@@ -67,6 +85,8 @@ abbr {
 }
 
 .answer_panel {
-    margin-inline: 1.4rem;
     border-bottom: solid 1px var(--color-light-grayish-blue);
+    float: left;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
 }
