@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
+  <script src="main.js" async="" defer=""></script>
   <style>
     .attribution {
       font-size: 11px;
@@ -28,35 +29,35 @@
       
       <h1 class="faq_title"><abbr title="Frequently Asked Questions">FAQ</abbr></h1>
 
-      <button type="button" class="accordion" aria-controls="answer_panel_1" aria-expanded="false">How many team members
+      <button type="button" class="accordion" id="question_1" aria-controls="answer_panel_1" aria-expanded="false">How many team members
         can I invite?</button>
-      <div class="answer_panel" id="answer_panel_1">
+      <div class="answer_panel" id="answer_panel_1" data-visible="false">
         <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members
           for the Premium plan.</p>
       </div>
 
-      <button type="button" class="accordion" aria-controls="answer_panel_2" aria-expanded="false">What is the maximum
+      <button type="button" class="accordion" id="question_2" aria-controls="answer_panel_2" aria-expanded="false">What is the maximum
         file upload size?</button>
-      <div class="answer_panel" id="answer_panel_2">
+      <div class="answer_panel" id="answer_panel_2" data-visible="false">
         <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
       </div>
 
-      <button type="button" class="accordion" aria-controls="answer_panel_3" aria-expanded="false">How do I reset my
+      <button type="button" class="accordion" id="question_3" aria-controls="answer_panel_3" aria-expanded="false">How do I reset my
         password?</button>
-      <div class="answer_panel" id="answer_panel_3">
+      <div class="answer_panel" id="answer_panel_3" data-visible="false">
         <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page. A
           reset link will be emailed to you.</p>
       </div>
 
-      <button type="button" class="accordion" aria-controls="answer_panel_4" aria-expanded="false">Can I cancel my
+      <button type="button" class="accordion" id="question_4" aria-controls="answer_panel_4" aria-expanded="false">Can I cancel my
         subscription?</button>
-      <div class="answer_panel" id="answer_panel_4">
+      <div class="answer_panel" id="answer_panel_4" data-visible="false">
         <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
       </div>
 
-      <button type="button" class="accordion" aria-controls="answer_panel_5" aria-expanded="false">Do you provide
+      <button type="button" class="accordion" id="question_5" aria-controls="answer_panel_5" aria-expanded="false">Do you provide
         additional support?</button>
-      <div class="answer_panel" id="answer_panel_5">
+      <div class="answer_panel" id="answer_panel_5" data-visible="false">
         <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.
         </p>
       </div>

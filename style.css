@@ -32,7 +32,8 @@ main {
     align-items: center;
     background-color: white;
     width: 88%;
-    border-radius: 20px;;
+    border-radius: 20px;
+    box-shadow: 0px 12px 10px 10px hsl(240, 50%, 0%, 0.2);
 }
 
 .mobile_person_bg {
@@ -89,4 +90,9 @@ abbr {
     float: left;
     margin-left: 1.4rem;
     margin-right: 1.4rem;
+}
+
+.answer_panel[data-visible = "false"] {
+    display: none;
+    transition: all 2s ease-in-out;
 }
