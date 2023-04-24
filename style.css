@@ -4,6 +4,7 @@
     --color-very-dark-grayish-blue: hsl(237, 12%, 33%);
     --color-dark-grayish-blue: hsl(240, 6%, 50%);
     --color-light-grayish-blue: hsl(240, 5%, 91%);
+    --color-soft-red: hsl(14, 88%, 65%);
 }
 
 * {
@@ -34,8 +35,8 @@ main {
 }
 
 .mobile_person_bg {
-    height: 50vw;
-    margin-top: -30vw;  
+    height: 48vw;
+    margin-top: -29vw;  
 }
 
 .bg_shadow {
@@ -59,7 +60,12 @@ abbr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 85%;
+    padding-bottom: 3rem;
+}
+
+.question {
+    border-bottom: solid 1px var(--color-light-grayish-blue);
 }
 
 .accordion {
@@ -68,18 +74,24 @@ abbr {
     cursor: pointer;
     border: none;
     outline: none;
-    padding: 1rem 0 0.7rem 0;
+    padding: 0.95rem 0 0.95rem 0;
     background: none;
     color: var(--color-dark-grayish-blue);
-}
-
-.accordion:not(:first-of-type) {
-    border-top: solid 1px var(--color-light-grayish-blue);
 }
 
 .accordion::after {
     content: url("images/icon-arrow-down.svg");
     float: right;
+}
+
+.accordion:hover {
+    color: var(--color-soft-red);
+    transition: all 250ms ease-in-out;
+}
+
+.accordion[aria-expanded = "true"] {
+    color: black;
+    font-weight: 700;
 }
 
 .answer {
@@ -90,9 +102,8 @@ abbr {
     line-height: 1.1rem;
 }
 
-.answer_panel[data-visible = "false"] {
+.answer[data-visible = "false"] {
     display: none;
-    transition: all 2s ease-in-out;
 }
 
 .attribution {

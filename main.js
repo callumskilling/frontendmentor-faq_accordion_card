@@ -4,11 +4,11 @@ const questionThree = document.getElementById("question_3");
 const questionFour = document.getElementById("question_4");
 const questionFive = document.getElementById("question_5");
 
-const answerOne = document.getElementById("answer_panel_1");
-const answerTwo = document.getElementById("answer_panel_2");
-const answerThree = document.getElementById("answer_panel_3");
-const answerFour = document.getElementById("answer_panel_4");
-const answerFive = document.getElementById("answer_panel_5");
+const answerOne = document.getElementById("answer_1");
+const answerTwo = document.getElementById("answer_2");
+const answerThree = document.getElementById("answer_3");
+const answerFour = document.getElementById("answer_4");
+const answerFive = document.getElementById("answer_5");
 
 questionOne.addEventListener('click', () => {
     const visibility = questionOne.getAttribute('aria-expanded')

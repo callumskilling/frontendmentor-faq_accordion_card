@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
@@ -13,38 +13,49 @@
 
 <body>
   <main class="container">
-      <img src="./images/illustration-woman-online-mobile.svg" alt="an illustration of a person using a computer"
-        class="mobile_person_bg" />
-      <img src="./images/bg-pattern-mobile.svg" class="bg_shadow" />
+    <img src="./images/illustration-woman-online-mobile.svg" alt="an illustration of a person using a computer"
+      class="mobile_person_bg" />
+    <img src="./images/bg-pattern-mobile.svg" class="bg_shadow" />
 
-      <h1 class="faq_title"><abbr title="Frequently Asked Questions">FAQ</abbr></h1>
-      <section id="questions">
-        <button type="button" class="accordion" id="question_1" aria-controls="answer_panel_1" aria-expanded="false">How many team members can I invite?</button>
-        <div class="answer_panel" id="answer_panel_1" data-visible="false">
-          <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-        </div>
+    <h1 class="faq_title"><abbr title="Frequently Asked Questions">FAQ</abbr></h1>
+    <section id="questions">
 
-        <button type="button" class="accordion" id="question_2" aria-controls="answer_panel_2" aria-expanded="false">What is the maximum file upload size?</button>
-        <div class="answer_panel" id="answer_panel_2" data-visible="false">
-          <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-        </div>
+      <div class="question">
+        <button type="button" class="accordion" id="question_1" aria-controls="answer_1" aria-expanded="false">How many
+          team members can I invite?</button>
+        <p class="answer" id="answer_1" data-visible="false">You can invite up to 2 additional users on the Free plan.
+          There is no limit on team members for the Premium plan.</p>
+      </div>
 
-        <button type="button" class="accordion" id="question_3" aria-controls="answer_panel_3" aria-expanded="false">How do I reset my password?</button>
-        <div class="answer_panel" id="answer_panel_3" data-visible="false">
-          <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page. A
-            reset link will be emailed to you.</p>
-        </div>
+      <div class="question">
+        <button type="button" class="accordion" id="question_2" aria-controls="answer_2" aria-expanded="false">What is
+          the
+          maximum file upload size?</button>
+        <p class="answer" id="answer_2" data-visible="false">No more than 2GB. All files in your account must fit your
+          allotted storage space.</p>
+      </div>
 
-        <button type="button" class="accordion" id="question_4" aria-controls="answer_panel_4" aria-expanded="false">Can I cancel my subscription?</button>
-        <div class="answer_panel" id="answer_panel_4" data-visible="false">
-          <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
-        </div>
+      <div class="question">
+        <button type="button" class="accordion" id="question_3" aria-controls="answer_3" aria-expanded="false">How do I
+          reset my password?</button>
+        <p class="answer" id="answer_3" data-visible="false">Click “Forgot password” from the login page or “Change
+          password” from your profile page. A reset link will be emailed to you.</p>
+      </div>
 
-        <button type="button" class="accordion" id="question_5" aria-controls="answer_panel_5" aria-expanded="false">Do you provide additional support?</button>
-        <div class="answer_panel" id="answer_panel_5" data-visible="false">
-          <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </p>
-        </div>
+      <div class="question">
+        <button type="button" class="accordion" id="question_4" aria-controls="answer_4" aria-expanded="false">Can I
+          cancel my subscription?</button>
+        <p class="answer" id="answer_4" data-visible="false">Yes! Send us a message and we’ll process your request no
+          questions asked.</p>
+      </div>
+
+      <div class="question">
+        <button type="button" class="accordion" id="question_5" aria-controls="answer_5" aria-expanded="false">Do you
+          provide additional support?</button>
+        <p class="answer" id="answer_5" data-visible="false">Chat and email support is available 24/7. Phone lines are
+          open during normal business hours.</p>
+      </div>
+
     </section>
   </main>
   <footer class="attribution">
