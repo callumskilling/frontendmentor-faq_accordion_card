@@ -34,12 +34,24 @@ main {
     box-shadow: 0px 12px 10px 10px hsl(240, 50%, 0%, 0.2);
 }
 
+.images_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop_only {
+    display: none;
+}
+
 .mobile_person_bg {
     height: 48vw;
     margin-top: -29vw;  
 }
 
-.bg_shadow {
+.mobile_bg_shadow {
     margin-top: -20vw;
     height: 27.75vw;
     width: 64vw
@@ -82,6 +94,12 @@ abbr {
 .accordion::after {
     content: url("images/icon-arrow-down.svg");
     float: right;
+    transition: all 0.5s;
+}
+
+.accordion[aria-expanded = "true"]::after {
+    rotate: 180deg;
+    transition: all 0.5s;
 }
 
 .accordion:hover {
@@ -115,3 +133,22 @@ abbr {
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+
+
+@media only screen and (min-width: 768px) {
+    .mobile_only {
+        display: none;
+    }
+
+    .desktop_only {
+        display: block;
+    }
+    .container {
+        display: flex;
+    }
+
+    .desktop_bg_shadow {
+        width: 32vw;
+    }
+}

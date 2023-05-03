@@ -13,13 +13,17 @@
 
 <body>
   <main class="container">
-    <img src="./images/illustration-woman-online-mobile.svg" alt="an illustration of a person using a computer"
-      class="mobile_person_bg" />
-    <img src="./images/bg-pattern-mobile.svg" class="bg_shadow" />
+    <div class="images_container">
+      <img src="./images/illustration-woman-online-mobile.svg" alt="an illustration of a person using a computer"
+        class="mobile_person_bg mobile_only" />
+      <img src="./images/bg-pattern-mobile.svg" class="mobile_bg_shadow mobile_only" />
+      <img src="./images/illustration-box-desktop.svg" class="desktop_block desktop_only" />
+      <img src="./images/illustration-woman-online-desktop.svg" alt="an illustration of a person using a computer" class="desktop_person_bg desktop_only" />
+      <img src="./images/bg-pattern-desktop.svg" class="desktop_bg_shadow desktop_only" />
+    </div>
 
-    <h1 class="faq_title"><abbr title="Frequently Asked Questions">FAQ</abbr></h1>
     <section id="questions">
-
+      <h1 class="faq_title"><abbr title="Frequently Asked Questions">FAQ</abbr></h1>
       <div class="question">
         <button type="button" class="accordion" id="question_1" aria-controls="answer_1" aria-expanded="false">How many
           team members can I invite?</button>
