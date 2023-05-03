@@ -20,7 +20,7 @@ questionOne.addEventListener('click', () => {
         questionOne.setAttribute('aria-expanded', "false")
         answerOne.setAttribute('data-visible', "false")
     }
-})
+});
 
 questionTwo.addEventListener('click', () => {
     const visibility = questionTwo.getAttribute('aria-expanded')
@@ -32,7 +32,7 @@ questionTwo.addEventListener('click', () => {
         questionTwo.setAttribute('aria-expanded', "false")
         answerTwo.setAttribute('data-visible', "false")
     }
-})
+});
 
 questionThree.addEventListener('click', () => {
     const visibility = questionThree.getAttribute('aria-expanded')
@@ -44,7 +44,7 @@ questionThree.addEventListener('click', () => {
         questionThree.setAttribute('aria-expanded', "false")
         answerThree.setAttribute('data-visible', "false")
     }
-})
+});
 
 questionFour.addEventListener('click', () => {
     const visibility = questionFour.getAttribute('aria-expanded')
@@ -56,7 +56,7 @@ questionFour.addEventListener('click', () => {
         questionFour.setAttribute('aria-expanded', "false")
         answerFour.setAttribute('data-visible', "false")
     }
-})
+});
 
 questionFive.addEventListener('click', () => {
     const visibility = questionFive.getAttribute('aria-expanded')
@@ -68,4 +68,4 @@ questionFive.addEventListener('click', () => {
         questionFive.setAttribute('aria-expanded', "false")
         answerFive.setAttribute('data-visible', "false")
     }
-})
+});
