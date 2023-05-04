@@ -8,8 +8,8 @@
 }
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -18,8 +18,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     height: 100vh;
+    max-height: 100vh;
 }
 
 main {
@@ -48,7 +49,7 @@ main {
 
 .mobile_person_bg {
     height: 48vw;
-    margin-top: -29vw;  
+    margin-top: -29vw;
 }
 
 .mobile_bg_shadow {
@@ -97,7 +98,7 @@ abbr {
     transition: all 0.5s;
 }
 
-.accordion[aria-expanded = "true"]::after {
+.accordion[aria-expanded="true"]::after {
     rotate: 180deg;
     transition: all 0.5s;
 }
@@ -107,7 +108,7 @@ abbr {
     transition: all 250ms ease-in-out;
 }
 
-.accordion[aria-expanded = "true"] {
+.accordion[aria-expanded="true"] {
     color: black;
     font-weight: 700;
 }
@@ -120,23 +121,30 @@ abbr {
     line-height: 1.1rem;
 }
 
-.answer[data-visible = "false"] {
+.answer[data-visible="false"] {
     display: none;
 }
 
 .attribution {
+    position: absolute;
+    bottom: 0;
     padding: 20px;
     font-size: 11px;
     text-align: center;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
 
 
 
 @media only screen and (min-width: 768px) {
+
+    body {
+        justify-content: center;
+    }
+
     .mobile_only {
         display: none;
     }
@@ -144,11 +152,38 @@ abbr {
     .desktop_only {
         display: block;
     }
-    .container {
-        display: flex;
+
+    main {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 0;
+        margin-left: 3.5vw;
+        max-height: 510px;
+        max-width: 64vw;
+        background-image: url('./images/illustration-woman-online-desktop.svg'), url('./images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: right 37.1vw center, right 37.1vw top -300px;
     }
 
-    .desktop_bg_shadow {
-        width: 32vw;
+    .images_container {
+        width: auto;
+    }
+
+    .desktop_block {
+        position: absolute;
+        top: 44%;
+        right: 73.5%;
+    }
+
+    .faq_title {
+        text-align: start;
+        font-size: 2rem;
+    }
+
+    #questions {
+        margin-left: 19vw;
+        width: 24vw;
+        padding-top: 6.5vw;
+        padding-bottom: 10vw;
     }
 }
