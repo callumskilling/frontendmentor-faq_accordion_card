@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://callumskilling.github.io/frontendmentor-faq_accordion_card/](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-card-hcbY4ZYdhF](https://www.frontendmentor.io/solutions/faq-accordion-card-hcbY4ZYdhF)
+- Live Site URL: [https://callumskilling.github.io/frontendmentor-faq_accordion_card/](https://callumskilling.github.io/frontendmentor-faq_accordion_card/)
 
 ## My process
 
